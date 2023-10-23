@@ -14,6 +14,6 @@ public class AddressService
 
     public Address saveAddress(Address address)
     {
-        return addressRepository.save(address);
+        return addressRepository.saveAndFlush(address);
     }
 }
